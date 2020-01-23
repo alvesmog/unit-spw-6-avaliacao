@@ -1,0 +1,17 @@
+img.fotos{
+    border-radius: 100pt;
+    max-width:40%;
+    height:auto;
+}
+
+#containerSocial{
+    background-color: antiquewhite;
+}
+
+#btnAcesso{
+    margin-left: 50%;
+}
+
+body{
+    background-color: azure;
+}
