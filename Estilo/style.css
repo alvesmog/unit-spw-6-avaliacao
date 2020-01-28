@@ -13,5 +13,24 @@ img.fotos{
 }
 
 body{
-    background-color: azure;
+    background-color: rgb(202, 207, 207);
+}
+
+img.icone{
+    max-width: 30pt;
+    margin-left: 10pt;
+}
+
+div.card-deck{
+    max-width: 450pt;
+}
+
+div.form-group{
+    margin-top: 30px;
+}
+
+#formulario-contato{
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
 }
