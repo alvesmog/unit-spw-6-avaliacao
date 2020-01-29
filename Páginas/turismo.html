@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Turismo</title>
+
+    <!-- Arquivos do Bootstrap -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../Estilo/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+        <a class="navbar-brand text-light" href="landing_page.html">Desenvolvimento Web</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="turismo.html">Página de turismo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Projetos</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container col-lg-6 mt-3">
+        <div id="carouselId" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" data-interval="3500">
+                    <img src="../Imagens/recife.jpg" alt="First slide" style="width: 1500px; height: 400px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a class="carrossel" href="#recife">
+                            <h3>Bairro do Recife</h3>
+                        </a>
+                        <p>Recife, também conhecido como Recife Antigo, é um bairro da cidade brasileira do Recife,
+                            capital do estado de Pernambuco, que corresponde à parte leste do seu centro histórico.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="3500">
+                    <img src="../Imagens/marcozero.jpg" alt="Second slide" style="width: 1500px; height: 400px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#marcozero" class="carrossel">
+                            <h3>Praça do Marco Zero</h3>
+                        </a>
+                        <p>A Praça Rio Branco, também conhecida como Marco Zero, é um espaço público localizado no
+                            bairro do Recife da cidade homônima, capital de Pernambuco.</p>
+                    </div>
+                </div>
+                <div class="carousel-item"data-interval="3500">
+                    <img src="../Imagens/boaviagem.jpeg" alt="Third slide" style="width: 1500px; height: 400px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Praia de Boa Viagem</h3>
+                        <p>Boa Viagem é um extenso e populoso bairro nobre situado na Zona Sul da cidade do Recife,
+                            capital de Pernambuco, Brasil. Uma das suas principais características é a sua posição ao
+                            longo do Oceano Atlântico, onde também fica a praia de Boa Viagem.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="container bg-light mt-3 artigos">
+            <h3 id="recife">Bairro do Recife</h3>
+            <p>O bairro do Recife surgiu na primeira metade do século XVI. O ponto de origem da povoação foi um porto,
+                construído para escoar pau-brasil e os produtos da atividade agro-açucareira de Olinda, então capital
+                pernambucana. Instalado o porto, em seguida houve a necessidade de construir depósitos para armazenar as
+                mercadorias, também foram erguidas as casas para servir como residências dos trabalhadores portuários e,
+                assim, nasceu a comunidade.
+
+                Inicialmente o bairro era denominado Arrecife dos Navios e se estendia, desordenadamente, por uma área
+                de aproximadamente dez hectares, com a construção das casas não seguindo nenhum ordenamento: a abertura
+                de ruas obedecia apenas à vontade dos que ali se fixavam.
+
+                Só durante o domínio holandês, precisamente com a chegada do conde Maurício de Nassau a Pernambuco
+                (1637), é que o bairro passou a ter algum planejamento. Nessa época, eram 15 ruas e uma praça. Por conta
+                da movimentação do porto, o povoado logo se tornaria bastante habitado. Em 1654, por exemplo, quando os
+                holandeses deixaram Pernambuco, o hoje bairro do Recife já contava com trezentos prédios - entre os
+                quais a Casa da Câmara, a Igreja do Corpo Santo, a Cadeia e vários Armazéns.</p>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OO-DJClrrlE?rel=0"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <div class="container bg-light mt-3 artigos">
+            <h3 id="marcozero">Praça do Marco Zero</h3>
+            <p>O bairro do Recife surgiu na primeira metade do século XVI. O ponto de origem da povoação foi um porto,
+                construído para escoar pau-brasil e os produtos da atividade agro-açucareira de Olinda, então capital
+                pernambucana. Instalado o porto, em seguida houve a necessidade de construir depósitos para armazenar as
+                mercadorias, também foram erguidas as casas para servir como residências dos trabalhadores portuários e,
+                assim, nasceu a comunidade.
+
+                Inicialmente o bairro era denominado Arrecife dos Navios e se estendia, desordenadamente, por uma área
+                de aproximadamente dez hectares, com a construção das casas não seguindo nenhum ordenamento: a abertura
+                de ruas obedecia apenas à vontade dos que ali se fixavam.
+
+                Só durante o domínio holandês, precisamente com a chegada do conde Maurício de Nassau a Pernambuco
+                (1637), é que o bairro passou a ter algum planejamento. Nessa época, eram 15 ruas e uma praça. Por conta
+                da movimentação do porto, o povoado logo se tornaria bastante habitado. Em 1654, por exemplo, quando os
+                holandeses deixaram Pernambuco, o hoje bairro do Recife já contava com trezentos prédios - entre os
+                quais a Casa da Câmara, a Igreja do Corpo Santo, a Cadeia e vários Armazéns.</p>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/c-wfMZxtCsc?rel=0"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Ir para o topo">Topo</button>
+
+    <script>
+
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction()
+        {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+            {
+                mybutton.style.display = "block";
+            } else
+            {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction()
+        {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
