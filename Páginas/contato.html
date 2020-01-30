@@ -23,6 +23,11 @@
 
     <link rel="stylesheet" href="../Estilo/style.css">
 
+    <!-- SMTPJS -->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="../Javascript/contato.js"></script> 
+
 </head>
 
 <body>
@@ -58,10 +63,17 @@
 
     <div class="container col-lg-4">
         <div class="form-group" id="formulario-contato">
-            <label for="">Contato</label>
-            <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
-            <small id="emailHelpId" class="form-text text-muted">Insira o seu e-mail para receber os currículos</small><br>
-            <button type="button" class="btn btn-primary">Encaminhar</button>
+            <label for=""><h4>Contato</h4></label>
+            <div class="row" style="padding-left: 15px;">
+                <img src="../Imagens/thatsall.jpg" alt="" style="vertical-align: middle; margin:auto; max-width: 500px; border-radius: 30px; padding-bottom: 20px;">
+                <p><h6>Esperamos que tenham gostado do nosso trabalho... Digite seu e-mail abaixo para receber uma mensagem especial de agradecimento!</h6></p>
+            </div>
+            <form method="post">
+                <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+                <br>
+                <input class="btn-primary" type="button" value="Encaminhar" onclick="sendEmail()">
+            </form>
+            
         </div>
     </div>
 
