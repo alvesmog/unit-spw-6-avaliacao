@@ -2,6 +2,8 @@ img.fotos{
     border-radius: 100pt;
     max-width:40%;
     height:auto;
+    align-self: center;
+    padding-top: 10px;
 }
 
 #containerSocial{
@@ -22,7 +24,7 @@ img.icone{
 }
 
 div.card-deck{
-    max-width: 450pt;
+    max-width: 300pt;
 }
 
 div.form-group{
@@ -62,4 +64,8 @@ a.carrossel{
   
   #myBtn:hover {
     background-color: rgb(150, 150, 150); /* Add a dark-grey background on hover */
+  }
+
+  .card{
+      border-radius: 30px;
   }

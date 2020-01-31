@@ -44,15 +44,13 @@
                     <a class="nav-link dropdown-toggle text-light" href="#" id="dropdownId" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Projetos</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
+                        <a class="dropdown-item" href="https://github.com/alvesmog/unit-spw-2-avaliacao">Restaurante de linha de comando (Java)</a>
+                        <a class="dropdown-item" href="https://github.com/alvesmog/unit-spw-4-avaliacao">Arrumador de gavetas - Utilizando bubble sort (Java)</a>
+                        <a class="dropdown-item" href="https://github.com/alvesmog/hackerRank-solutions">HackerRank solutions (Java, JavaScript, SQL)</a>
+                        <a class="dropdown-item" href="https://github.com/alvesmog/unit-spw-3-avaliacao">Biblioteca de linha de comando (Java)</a>
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
 
@@ -84,10 +82,12 @@
                             bairro do Recife da cidade homônima, capital de Pernambuco.</p>
                     </div>
                 </div>
-                <div class="carousel-item"data-interval="3500">
+                <div class="carousel-item" data-interval="3500">
                     <img src="../Imagens/boaviagem.jpeg" alt="Third slide" style="width: 1500px; height: 400px;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Praia de Boa Viagem</h3>
+                        <a href="#boaviagem" class="carrossel">
+                            <h3>Praia de Boa Viagem</h3>
+                        </a>
                         <p>Boa Viagem é um extenso e populoso bairro nobre situado na Zona Sul da cidade do Recife,
                             capital de Pernambuco, Brasil. Uma das suas principais características é a sua posição ao
                             longo do Oceano Atlântico, onde também fica a praia de Boa Viagem.</p>
@@ -154,6 +154,19 @@
 
         </div>
 
+        <div class="container bg-light mt-3 artigos">
+            <h3 id="boaviagem">Praia de Boa Viagem</h3>
+            <p>A Praia de Boa Viagem é a praia urbana mais famosa da cidade do Recife, capital do estado brasileiro de
+                Pernambuco. Com aproximadamente oito quilômetros (8 km) de extensão, está situada no bairro homônimo,
+                Zona Sul da capital pernambucana, delimitada pela Praia do Pina ao norte e pela Praia de Piedade ao sul.
+            </p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oxElBTmKzQE" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+
     </div>
 
     <button onclick="topFunction()" id="myBtn" title="Ir para o topo">Topo</button>
@@ -166,20 +179,16 @@
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () { scrollFunction() };
 
-        function scrollFunction()
-        {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
-            {
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
-            } else
-            {
+            } else {
                 mybutton.style.display = "none";
             }
         }
 
         // When the user clicks on the button, scroll to the top of the document
-        function topFunction()
-        {
+        function topFunction() {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
