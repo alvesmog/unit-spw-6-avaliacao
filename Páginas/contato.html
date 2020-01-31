@@ -23,10 +23,10 @@
 
     <link rel="stylesheet" href="../Estilo/style.css">
 
-    <!-- SMTPJS -->
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contato.js"></script>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script> 
-    <script src="../Javascript/contato.js"></script> 
 
 </head>
 
@@ -61,22 +61,51 @@
         </div>
     </nav>
 
-    <div class="container col-lg-4">
+    <div class="container col-lg-4 col-md-4">
         <div class="form-group" id="formulario-contato">
-            <label for=""><h4>Contato</h4></label>
-            <div class="row" style="padding-left: 15px;">
-                <img src="../Imagens/thatsall.jpg" alt="" style="vertical-align: middle; margin:auto; max-width: 500px; border-radius: 30px; padding-bottom: 20px;">
-                <p><h6>Esperamos que tenham gostado do nosso trabalho... Digite seu e-mail abaixo para receber uma mensagem especial de agradecimento!</h6></p>
+            <label for="">
+                <h4>Contato</h4>
+            </label>
+            <div class="row" style="padding: 15px;">
+                <img src="../Imagens/thatsall.jpg" alt=""
+                    style="vertical-align: middle; margin:auto; max-width:100%; height: auto; border-radius: 30px; padding-bottom: 20px;">
+                <p>
+                    <h6>Esperamos que tenham gostado do nosso trabalho... Digite seu e-mail abaixo para receber uma
+                        mensagem especial de agradecimento!</h6>
+                </p>
+
+                <form method="post">
+                    <input type="email" name="email" id="emailDestinatario">
+                    <input type="button" value="Send Email" onclick="sendEmail()" />
+                </form>
             </div>
-            <form method="post">
-                <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
-                <br>
-                <input class="btn-primary" type="button" value="Encaminhar" onclick="sendEmail()">
-            </form>
-            
         </div>
     </div>
 
 </body>
+
+<script>
+    function sendEmail() {
+
+        var emailDestinatario = document.getElementById("emailDestinatario").value;
+
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "desenvolvimento.web.unit@gmail.com",
+            Password: "aYjA5LHm2XUbJSW",
+            To: emailDestinatario,
+            From: "desenvolvimento.web.unit@gmail.com",
+            Subject: "Guilherme, da UNIT - Um agradecimento especial!",
+            Body: "Muito obrigado!!",
+            Attachments: [
+                {
+                    name: "Guilherme Augusto Alves Monteiro.pdf",
+                    path: "https://drive.google.com/uc?export=download&id=1tIEWjeTtCHS4-SmiOzCNkNsFSudNPFWf"
+                }]
+        }).then(
+            message => alert(message)
+        );
+    }
+</script>
 
 </html>
